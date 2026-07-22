@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Worlds Archive</title>
+
+<style>
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+header{
+    background:#111827;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid #facc15;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#facc15;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#facc15;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:900px;
+    margin:auto;
+    color:#d1d5db;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    padding:50px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:12px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#facc15;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">The Worlds Archive</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Worlds</a>
+<a href="#">Users</a>
+<a href="#">Avatars</a>
+<a href="#">Gallery</a>
+<a href="#">Downloads</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>The Worlds Archive</h1>
+
+<p>
+Proyecto dedicado a preservar Worlds.com, sus mundos, usuarios,
+avatares, herramientas, historia y documentación creada por la comunidad.
+</p>
+
+</section>
+
+<section class="grid">
+
+<div class="card">
+<h2>🌍 Worlds</h2>
+<p>Explora todos los mundos archivados.</p>
+</div>
+
+<div class="card">
+<h2>👤 Users</h2>
+<p>Perfiles de creadores y usuarios destacados.</p>
+</div>
+
+<div class="card">
+<h2>🖼 Gallery</h2>
+<p>Capturas históricas de Worlds.com.</p>
+</div>
+
+<div class="card">
+<h2>📥 Downloads</h2>
+<p>Clientes, herramientas y recursos.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 The Worlds Archive
+</footer>
+
+</body>
+</html>

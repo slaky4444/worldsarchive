@@ -6,95 +6,181 @@
 <title>The Worlds Archive</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
 body{
-    margin:0;
-    background:#0f172a;
-    color:white;
-    font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#0b0518,#170b35,#090812);
+color:white;
+overflow-x:hidden;
+}
+
+/* Fondo de estrellas */
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(#b78cff 1px, transparent 1px);
+background-size:80px 80px,140px 140px;
+opacity:.35;
+animation:moveStars 120s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveStars{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-800px);
+}
 }
 
 header{
-    background:#111827;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:2px solid #facc15;
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:rgba(20,20,40,.65);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,.15);
 }
 
 .logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#facc15;
+font-size:30px;
+font-weight:bold;
+color:#d8b4fe;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
+text-decoration:none;
+color:white;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#c084fc;
 }
 
 .hero{
-    text-align:center;
-    padding:100px 20px;
+padding:100px 20px;
+text-align:center;
 }
 
 .hero h1{
-    font-size:60px;
-    color:#facc15;
+font-size:65px;
+margin-bottom:20px;
+color:#ffffff;
+text-shadow:0 0 20px #b14cff;
 }
 
 .hero p{
-    font-size:20px;
-    max-width:900px;
-    margin:auto;
-    color:#d1d5db;
+font-size:20px;
+max-width:900px;
+margin:auto;
+color:#dddddd;
+}
+
+.search{
+margin-top:40px;
+}
+
+.search input{
+width:420px;
+max-width:90%;
+padding:16px;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,.08);
+color:white;
+font-size:17px;
+outline:none;
+backdrop-filter:blur(8px);
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-    padding:50px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:60px;
+
 }
 
 .card{
-    background:#1e293b;
-    border-radius:12px;
-    padding:25px;
-    transition:.3s;
+
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:18px;
+transition:.35s;
+
 }
 
 .card:hover{
-    transform:translateY(-5px);
+
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(180,80,255,.6);
+
 }
 
 .card h2{
-    color:#facc15;
+
+margin-bottom:15px;
+color:#d8b4fe;
+
+}
+
+.card p{
+
+color:#ddd;
+line-height:1.6;
+
 }
 
 footer{
-    text-align:center;
-    padding:30px;
-    color:#94a3b8;
+
+padding:35px;
+text-align:center;
+color:#aaa;
+
 }
+
 </style>
 
 </head>
 
 <body>
 
+<div class="stars"></div>
+
 <header>
 
 <div class="logo">The Worlds Archive</div>
 
 <nav>
+
 <a href="#">Home</a>
 <a href="#">Worlds</a>
 <a href="#">Users</a>
 <a href="#">Avatars</a>
 <a href="#">Gallery</a>
 <a href="#">Downloads</a>
+
 </nav>
 
 </header>
@@ -104,9 +190,15 @@ footer{
 <h1>The Worlds Archive</h1>
 
 <p>
-Proyecto dedicado a preservar Worlds.com, sus mundos, usuarios,
-avatares, herramientas, historia y documentación creada por la comunidad.
+Preserving the history of Worlds.com, including worlds, avatars,
+users, downloads, galleries and community discoveries.
 </p>
+
+<div class="search">
+
+<input type="text" placeholder="Search worlds...">
+
+</div>
 
 </section>
 
@@ -114,28 +206,40 @@ avatares, herramientas, historia y documentación creada por la comunidad.
 
 <div class="card">
 <h2>🌍 Worlds</h2>
-<p>Explora todos los mundos archivados.</p>
+<p>Explore archived worlds with screenshots, information and download links.</p>
 </div>
 
 <div class="card">
 <h2>👤 Users</h2>
-<p>Perfiles de creadores y usuarios destacados.</p>
+<p>Discover creators, explorers and legendary members of Worlds.com.</p>
+</div>
+
+<div class="card">
+<h2>🎭 Avatars</h2>
+<p>Browse classic avatars and community creations.</p>
 </div>
 
 <div class="card">
 <h2>🖼 Gallery</h2>
-<p>Capturas históricas de Worlds.com.</p>
+<p>Historical screenshots and rare images from Worlds.com.</p>
 </div>
 
 <div class="card">
 <h2>📥 Downloads</h2>
-<p>Clientes, herramientas y recursos.</p>
+<p>Clients, patches and preserved files.</p>
+</div>
+
+<div class="card">
+<h2>📖 History</h2>
+<p>The complete history of Worlds.com and its community.</p>
 </div>
 
 </section>
 
 <footer>
+
 © 2026 The Worlds Archive
+
 </footer>
 
 </body>

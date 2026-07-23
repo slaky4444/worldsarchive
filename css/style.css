@@ -138,3 +138,23 @@ padding:35px;
 text-align:center;
 color:#aaa;
 }
+.hero-logo{
+width:320px;
+max-width:90%;
+display:block;
+margin:0 auto 30px;
+image-rendering:pixelated;
+filter:drop-shadow(0 0 20px rgba(170,80,255,.8));
+}
+
+.creator{
+margin-bottom:30px;
+font-size:18px;
+color:#d8b4fe;
+line-height:1.8;
+text-align:center;
+}
+
+.creator strong{
+color:#ffffff;
+}

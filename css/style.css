@@ -191,3 +191,36 @@ color:#ffffff;
 .donate-button:hover {
     transform: scale(1.05);
 }
+.contact-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    background: #7c3aed;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+}

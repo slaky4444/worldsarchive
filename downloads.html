@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Downloads - The Worlds Archive</title>
+<title>Gallery - The Worlds Archive</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -23,6 +23,20 @@ border-radius:18px;
 padding:20px;
 margin-bottom:30px;
 backdrop-filter:blur(12px);
+}
+
+.world-image{
+width:280px;
+height:170px;
+border-radius:12px;
+overflow:hidden;
+}
+
+.world-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
 .world-info h2{
@@ -59,6 +73,7 @@ background:#a855f7;
 <a href="index.html">Home</a>
 <a href="worlds.html">Worlds</a>
 <a href="users.html">Users</a>
+
 <a href="gallery.html">Gallery</a>
 <a href="downloads.html">Downloads</a>
 <a href="history.html">History</a>
@@ -68,112 +83,41 @@ background:#a855f7;
 
 <div class="worlds-container">
 
-<h1>📥 Downloads</h1>
+<h1>🖼 Gallery Archive</h1>
+<p>
+Explore screenshots, rare images and historical moments from Worlds.com preserved by The Worlds Archive.
+</p>
+
+<p><strong>Images Archived:</strong> 1</p>
+
+
+
+<div class="world-card">
+
+<div class="world-image">
+  <img src="images/galeria de nessu.png" alt="Xx_Nessu_xX">
+</div>
+
+<div class="world-info">
+
+<h2>Nessu's Gallery</h2>
+
+<p><b>Location:</b> World: Nessu's Gallery</p>
+
+<p><b>Creator:</b> Nessu</p>
+
+<p><b>Year:</b> 2026</p>
+
+<p><b>Category:</b> Screenshot</p>
 
 <p>
-Download preserved Worlds.com clients recommended by the community.
-</p>
-
-<p><strong>Available Downloads:</strong> 3</p>
-<br><br>
-
-<div class="world-card">
-
-<div class="world-image">
-<img src="images/libreworlds-logo.png" alt="LibreWorlds Logo">
-</div>
-
-<div class="world-info">
-
-<h2>LibreWorlds WorldsPlayer1890</h2>
-
-<p><b>Version:</b> 1890</p>
-
-<p><b>Status:</b> ⭐ Recommended</p>
-
-<p><b>Compatibility:</b> Excellent</p>
-
-<p>The most recommended version for most users.</p>
-
-<a class="button" href="downloads/libreworlds_worldsplayer1890-2.exe" download>
-Download
-</a>
-
-  <p>
-Official source:
-<a href="https://www.worldsplayer.com" target="_blank">
-WorldsPlayer.com
-</a>
+Screenshot taken inside Nessu's Avatar Gallery, one of the best-known community worlds in Worlds.com.
 </p>
 
 </div>
 
 </div>
-<div class="world-card">
 
-<div class="world-image">
-<img src="images/libreworlds-logo.png" alt="LibreWorlds Logo">
-</div>
-
-<div class="world-info">
-
-<h2>LibreWorlds WorldsPlayer1900</h2>
-
-<p><b>Version:</b> 1900</p>
-
-<p><b>Status:</b> Alternative</p>
-
-<p><b>Compatibility:</b> Good</p>
-
-<p>Alternative version for users who prefer the 1900 client.</p>
-
-<a class="button" href="downloads/libreworlds_worldsplayer1900-4.exe" download>
-Download
-</a>
-
-  <p>
-Official source:
-<a href="https://www.worldsplayer.com" target="_blank">
-WorldsPlayer.com
-</a>
-</p>
-
-</div>
-
-</div>
-<div class="world-card">
-
-<div class="world-image">
-<img src="images/libreworlds-logo.png" alt="LibreWorlds Logo">
-</div>
-
-<div class="world-info">
-
-<h2>LibreWorlds WorldsPlayer1904</h2>
-
-<p><b>Version:</b> 1904</p>
-
-<p><b>Status:</b> Latest Alternative</p>
-
-<p><b>Compatibility:</b> Good</p>
-
-<p>Latest preserved client version available in the archive.</p>
-
-<a class="button" href="downloads/libreworlds_worldsplayer1904-1.exe" download>
-Download
-</a>
-
-  <p>
-Official source:
-<a href="https://www.worldsplayer.com" target="_blank">
-WorldsPlayer.com
-</a>
-</p>
-
-</div>
-
-</div>
-</div>
-
+<script src="js/animations.js" defer></script>
 </body>
 </html>
